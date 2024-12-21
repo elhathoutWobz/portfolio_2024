@@ -1446,3 +1446,80 @@ a:hover {
     background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
   }
 }
+/* Floating WhatsApp icon */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* WhatsApp Input Container */
+.whatsapp-input-container {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  border-radius: 10px;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-input-container:focus {
+  outline: none;
+}
+
+/* Header in WhatsApp Input Container */
+.whatsapp-header {
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.whatsapp-header h3 {
+  font-size: 18px;
+  color: #25D366;
+  margin: 0;
+}
+
+.whatsapp-header p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* WhatsApp Input */
+.whatsapp-input-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Send Button */
+.whatsapp-input-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.whatsapp-input-container button:hover {
+  background-color: #128C7E;
+}

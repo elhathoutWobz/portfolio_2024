@@ -23,7 +23,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 </head>
 <body>
 
@@ -44,7 +46,7 @@
                 <a href="index.html" class="navbar-brand ">
                     <img style="position: fixed;top: 10px; height: 40px;width: 40px"
                          class=" rounded rounded-circle  logo"
-                         src="assets/img/logo.jpeg" alt=""></a>
+                         src="assets/img/logo_2.jpeg" alt=""></a>
             </div>
             <div class="collapse navbar-collapse" id="main-navbar">
                 <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
@@ -79,6 +81,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#blogs">
+                            Blogs
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">
                             Contact
                         </a>
@@ -106,6 +113,9 @@
             </li>
             <li>
                 <a href="#portfolio">Work</a>
+            </li>
+            <li>
+                <a href="#blogs">Blogs</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -136,88 +146,76 @@
     <!-- Hero Area End -->
 
 </header>
-<!-- Header Area wrapper End -->
-<!-- About Section Start -->
-<!--
-<section id="about" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-                    <img style="width: 50vh !important;" class="img-fluid rounded rounded-circle"
-                         src="assets/img/about/about-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="profile-wrapper wow fadeInRight bg-dark" data-wow-delay="0.3s">
-                    <h3>Hi Guys!</h3>
-                    <p style="font-size: 18px" class="font-italic">
-                        I am a <strong><em class="text-uppercase">Full Stack Developer</em></strong> passionate about
-                        creating innovative web solutions. Proficient in
-                        <strong><em class="text-uppercase">PHP</em></strong>with
-                        a background in <strong><em class="text-uppercase">Symfony and Laravel </em></strong>
-                        frameworks. Have skills in front-end technologies like <strong><em class="text-uppercase">Vue
-                        js</em></strong>
-                        to
-                        develop dynamic and responsive user interfaces. Bringing technical proficiency and strategic
-                        vision to
-                        develop dynamic and scalable web applications.
-                    </p>
-                    <hr class="border border-1 border-secondary"/>
-                    <ul class="admin-profile mt-4 font-weight-bold">
-                        <dl class="row">
-                            <dt class="col-sm-6"><i class="font-weight-bold  icon-note"></i></dt>
-                            <dd class="col-sm-6">Elhathout Abdelaziz</dd>
+<div class="canvas-wrapper">
 
-                            <dt class="col-sm-6"><i class="font-weight-bold icon-user"></i></dt>
-                            <dd class="col-sm-6">25 Years</dd>
-
-                            <dt class="col-sm-6"><i class="font-weight-bold icon-book-open"></i></dt>
-                            <dd class="col-sm-6">Bachelor's degree</dd>
-
-                            <dt class="col-sm-6"><i class="font-weight-bold icon-location-pin"></i></dt>
-                            <dd class="col-sm-6">Morocco, Casablanca</dd>
-
-                            <dt class="col-sm-6"><i class="font-weight-bold icon-envelope-open"></i></dt>
-                            <dd class="col-sm-6">abdelaazizeelhathoute.2018@gmail.com</dd>
-
-                            <dt class="col-sm-6"><i class="font-weight-bold icon-phone"></i></dt>
-                            <dd class="col-sm-6">+(212) 615919437</dd>
-                        </dl>
-
-                    </ul>
-                </div>
-                <div class="text-sm-left">
-                    <a href="./assets/pdf/cv-2024-v2.pdf"
-                       class="btn btn-dark rounded  d-flex align-content-center justify-content-center" target="_blank">
-                        <div>
-                            <svg fill="white" width="40px" height="40px" viewBox="-4.48 -4.48 40.96 40.96" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00032">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
-                                   stroke="#CCCCCC" stroke-width="0.96"><title>download-cloud</title>
-                                    <path d="M0 16q0 2.912 1.824 5.088t4.576 2.752q0.032 0 0.032-0.032v-0.064t0.032-0.032q0.544-1.344 1.344-2.176t2.208-1.184v-2.336q0-2.496 1.728-4.256t4.256-1.76 4.256 1.76 1.76 4.256v2.336q1.376 0.384 2.176 1.216t1.344 2.144l0.096 0.288h0.384q2.464 0 4.224-1.76t1.76-4.224v-2.016q0-2.464-1.76-4.224t-4.224-1.76q-0.096 0-0.32 0.032 0.32-1.152 0.32-2.048 0-3.296-2.368-5.632t-5.632-2.368q-2.88 0-5.056 1.824t-2.784 4.544q-1.152-0.352-2.176-0.352-3.296 0-5.664 2.336t-2.336 5.664v1.984zM10.016 25.824q-0.096 0.928 0.576 1.6l4 4q0.576 0.576 1.408 0.576t1.408-0.576l4-4q0.672-0.672 0.608-1.6-0.064-0.32-0.16-0.576-0.224-0.576-0.736-0.896t-1.12-0.352h-1.984v-5.984q0-0.832-0.608-1.408t-1.408-0.608-1.408 0.608-0.576 1.408v5.984h-2.016q-0.608 0-1.12 0.352t-0.736 0.896q-0.096 0.288-0.128 0.576z"></path>
-                                </g>
-                                <g id="SVGRepo_iconCarrier"><title>download-cloud</title>
-                                    <path d="M0 16q0 2.912 1.824 5.088t4.576 2.752q0.032 0 0.032-0.032v-0.064t0.032-0.032q0.544-1.344 1.344-2.176t2.208-1.184v-2.336q0-2.496 1.728-4.256t4.256-1.76 4.256 1.76 1.76 4.256v2.336q1.376 0.384 2.176 1.216t1.344 2.144l0.096 0.288h0.384q2.464 0 4.224-1.76t1.76-4.224v-2.016q0-2.464-1.76-4.224t-4.224-1.76q-0.096 0-0.32 0.032 0.32-1.152 0.32-2.048 0-3.296-2.368-5.632t-5.632-2.368q-2.88 0-5.056 1.824t-2.784 4.544q-1.152-0.352-2.176-0.352-3.296 0-5.664 2.336t-2.336 5.664v1.984zM10.016 25.824q-0.096 0.928 0.576 1.6l4 4q0.576 0.576 1.408 0.576t1.408-0.576l4-4q0.672-0.672 0.608-1.6-0.064-0.32-0.16-0.576-0.224-0.576-0.736-0.896t-1.12-0.352h-1.984v-5.984q0-0.832-0.608-1.408t-1.408-0.608-1.408 0.608-0.576 1.408v5.984h-2.016q-0.608 0-1.12 0.352t-0.736 0.896q-0.096 0.288-0.128 0.576z"></path>
-                                </g>
-                            </svg>
-                        </div>
-                        <div style="font-size: 16px" class="mt-2 px-5">Download Resume</div>
-                    </a>
-                </div>
-            </div>
+    <a href="https://eco.my.to/revue-de-presse" class="canvas">
+        <div class="canvas_border">
+            <svg>
+                <defs>
+                    <linearGradient id="grad-yellow" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(255,204,0);stop-opacity:1"></stop>
+                        <stop offset="100%" style="stop-color:rgb(204,153,0);stop-opacity:1"></stop>
+                    </linearGradient>
+                </defs>
+                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-yellow)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
         </div>
-    </div>
-</section>
--->
+        <div class="canvas_img-wrapper">
+            <img class="canvas_img" src="https://i.imghippo.com/files/ujkd4376Ns.png" alt="">
+        </div>
+        <div class="canvas_copy">
+            <strong class="canvas_copy_title" style="color: rgb(0,102,204);">Revue</strong>
+        </div>
+    </a>
+
+    <a href="https://www.cndp.ma/" target="_blank" class="canvas">
+        <div class="canvas_border">
+            <svg>
+                <defs>
+                    <linearGradient id="grad-yellow" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(255,204,0);stop-opacity:1"></stop>
+                        <stop offset="100%" style="stop-color:rgb(204,153,0);stop-opacity:1"></stop>
+                    </linearGradient>
+                </defs>
+                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-yellow)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
+        </div>
+        <div class="canvas_img-wrapper">
+            <img class="canvas_img" src="https://i.imghippo.com/files/WVG9516GpE.png" alt="">
+        </div>
+        <div class="canvas_copy">
+            <strong class="canvas_copy_title" style="color: rgb(0,102,204);">Communiqué</strong>
+        </div>
+    </a>
+
+    <a href="https://eco.my.to/dossier-de-presse" class="canvas">
+        <div class="canvas_border">
+            <svg>
+                <defs>
+                    <linearGradient id="grad-yellow" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(255,204,0);stop-opacity:1"></stop>
+                        <stop offset="100%" style="stop-color:rgb(204,153,0);stop-opacity:1"></stop>
+                    </linearGradient>
+                </defs>
+                <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-yellow)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+            </svg>
+        </div>
+        <div class="canvas_img-wrapper">
+            <img class="canvas_img" src="https://i.imghippo.com/files/aryh1076U.png" alt="">
+        </div>
+        <div class="canvas_copy">
+            <strong class="canvas_copy_title" style="color: rgb(0,102,204);">Dossier</strong>
+        </div>
+    </a>
+</div>
+
 <!-- About Section End -->
 <section id="about" class="light">
     <div class="container py-4">
-        <h1 class="h1 text-center text-dark" id="pageHeaderTitle">About</h1>
+        <h1 class="text-dark" id="pageHeaderTitle">About</h1>
         <article class="postcard dark blue">
             <a class="postcard__img_link" href="#">
-                <img class="postcard__img" src="assets/img/about/about-1.jpg" alt="Image Title"/>
+                <img class="postcard__img" src="assets/img/logo_2.jpeg" alt="Image Title"/>
             </a>
             <div class="postcard__text">
                 <div class="postcard__subtitle small">
@@ -226,32 +224,59 @@
                     </time>
                 </div>
                 <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt mt-5">
-                    I am a FULL STACK DEVELOPER passionate about creating innovative web solutions. Proficient in PHP
-                    with a background in SYMFONY AND LARAVEL frameworks. Have skills in front-end technologies like VUE
-                    JS to develop dynamic and responsive user interfaces. Bringing technical proficiency and strategic
-                    vision to develop dynamic and scalable web applications.
+                <div class="postcard__preview-txt mt-5"
+                     style="font-family: 'Arial', sans-serif; line-height: 1.8; color: #fdf9f9; max-width: 800px; margin: 0 auto; text-align: left;">
+                    <p style="font-size: 15px; font-weight: bold; color: #f5f5f5;">
+                        ✮👨🏻‍💻 <span style="color: #2980b9;">**ABDEL Aziz ELHATHOUT**</span> is a passionate Full Stack
+                        Developer committed to creating innovative web solutions. With extensive experience in <span
+                            style="color: #16a085;">PHP</span>, I specialize in backend development using the powerful
+                        <span style="color: #e67e22;">Symfony</span> and <span style="color: #8e44ad;">Laravel</span>
+                        frameworks, where I focus on building efficient, scalable systems.
+                    </p>
+
+                    <p style="font-size: 15px;">
+                        On the frontend, I leverage <span style="color: #e74c3c; font-weight: bold;">Vue.js</span> to
+                        design dynamic, responsive, and user-centric interfaces. My technical proficiency, combined with
+                        a strategic vision, enables me to craft high-performance, scalable web applications.
+                    </p>
+
+                    <p style="font-size: 15px;">
+                        Currently, I’m deepening my expertise in design patterns and software architecture to enhance
+                        the maintainability, scalability, and long-term efficiency of the solutions I create. By
+                        adhering to best practices, I am focused on developing robust and sustainable systems.
+                    </p>
                 </div>
-                <ul class="social-icon wow fadeInUp postcard__tagbox" data-wow-delay="0.8s">
+
+
+                <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
                     <li>
-                        <a class="linkedin" href="https://shorturl.at/bDFP5" target="_blank"><i title="linkedin"
-                                                                                                class="icon-social-linkedin"></i></a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/abdelaziz-elhathout-191290208/"
+                           target="_blank">
+                            <i title="linkedin" class="icon-social-linkedin"></i>
+                        </a>
                     </li>
                     <li>
-                        <a class="github" href="https://shorturl.at/tINP6" target="_blank"><i title="github"
-                                                                                              class="icon-social-github"></i></a>
+                        <a class="github" href="https://github.com/elhathoute" target="_blank">
+                            <i title="github" class="icon-social-github"></i>
+                        </a>
                     </li>
                     <li>
-                        <a class="coding-game" href="https://shorturl.at/qrXY5" target="_blank"><img
-                                title="codingGame" class="w-50 h-50" src="assets/img/coding-game.png"/></a>
+                        <a class="coding-game"
+                           href="https://www.codingame.com/profile/3ef6fe591fd69d45273d223a1e85582d8848015"
+                           target="_blank">
+                            <img title="codingGame" class="w-50 h-50" src="assets/img/coding-game.png"/>
+                        </a>
                     </li>
                     <li>
-                        <a class="hacker-rank" href="https://shorturl.at/coC03" target="_blank"><img
-                                title="hackerRank" class="w-50 h-50" src="assets/img/hacker-rank.png"/></a>
+                        <a class="hacker-rank" href="https://www.hackerrank.com/profile/abdelaazizeelha1"
+                           target="_blank">
+                            <img title="hackerRank" class="w-50 h-50" src="assets/img/hacker-rank.png"/>
+                        </a>
                     </li>
                     <li>
-                        <a class="email" href="mailto:abdelaazizeelhathoute.2018@gmail.com" target="_blank"><i
-                                title="email" class="icon-envelope"></i></a>
+                        <a class="email" href="mailto:abdelaazizeelhathoute.2018@gmail.com" target="_blank">
+                            <i title="email" class="icon-envelope"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -261,7 +286,7 @@
 
 <!-- Services Section Start -->
 <section id="services" class="services section-padding">
-    <h2 class="section-title wow flipInX" data-wow-delay="0.4s">What I do</h2>
+    <h1 class="text-dark" id="pageHeaderTitle">hat I do</h1>
     <div class="container">
         <div class="row">
             <!-- Services front -->
@@ -433,6 +458,7 @@
 <!-- Resume Section Start -->
 <div id="resume" class="section-padding">
     <div class="container">
+        <h1 class="text-dark" id="pageHeaderTitle">Resume</h1>
         <div class="row">
             <!--     Education       -->
             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -545,30 +571,34 @@
 
                         <li>
                             <div class="content-text text-dark">
+                                <h3 class="line-title ">Decq Print Maroc - FULL STACK DEVELOPER</h3>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <div>
+                                        <em id="dateRange_2"><i class="font-weight-bold icon-calendar"></i>
+                                            05/06/2024 to Present <i class="font-weight-bold icon-clock ml-2"></i>
+                                        </em>
+                                    </div>
+                                    <div style="font-size: 12px !important;"><i
+                                            class="font-weight-bold icon-location-pin"></i> CASABLANCA, MAROC
+                                    </div>
+                                </div>
+                                <p class="line-text mt-4">
+                                    <a href="https://decq.com/" target="_blank" class="font-weight-bold ">Decq Print</a>
+                                    Decq Print est une solution tout-en-un pour les entreprises de l'impression en
+                                    ligne. De la commande à la livraison, Decq Print vous aide à gérer votre entreprise.
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="content-text text-dark">
                                 <h3 class="line-title ">Wobz Technologies Maroc - FULL STACK DEVELOPER</h3>
                                 <div class="d-flex align-items-center justify-content-between mt-4">
                                     <div>
                                         <em id="dateRange"><i class="font-weight-bold icon-calendar"></i>
-                                            05/06/2023 to Present <i class="font-weight-bold icon-clock ml-2"></i>
+                                            05/06/2023 to 05/06/2024 <i class="font-weight-bold icon-clock ml-2"></i>
+                                            1 year
                                         </em>
                                     </div>
-                                    <script>
-                                        function calculateMonthsDifference(startDate) {
-                                            var currentDate = new Date();
-                                            var startDateObj = new Date(startDate);
-
-                                            var monthsDifference = (currentDate.getFullYear() - startDateObj.getFullYear()) * 12;
-                                            monthsDifference -= startDateObj.getMonth() + 1;
-                                            monthsDifference += currentDate.getMonth();
-                                            return monthsDifference <= 0 ? 0 : monthsDifference;
-                                        }
-
-                                        var startDate = "05/06/2023";
-                                        var monthsDifference = calculateMonthsDifference(startDate);
-
-                                        document.getElementById("dateRange").append(`${monthsDifference} months `);
-                                    </script>
-
                                     <div style="font-size: 12px !important;"><i
                                             class="font-weight-bold icon-location-pin"></i> CASABLANCA, MAROC
                                     </div>
@@ -650,7 +680,7 @@
 <!-- Resume Section End -->
 <!-- Skills Section Start -->
 <div id="skills" class="section-padding">
-    <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Skills</h2>
+    <h1 class="text-dark" id="pageHeaderTitle">Skills</h1>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 ">
@@ -1429,7 +1459,7 @@
 <section id="portfolios" class="section-padding">
     <!-- Container Starts -->
     <div class="container">
-        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">My Remarkable Works</h2>
+        <h1 class="text-dark" id="pageHeaderTitle">My Remarkable Works</h1>
         <div class="row">
             <div class="col-md-12">
                 <!-- Portfolio Controller/Buttons -->
@@ -1597,53 +1627,64 @@
     <!-- Container Ends -->
 </section>
 <!-- Portfolio Section Ends -->
-
-<!-- Counter Area Start-->
-<!--
-<section class="counter-section section-padding">
+<section id="blogs" class="section-padding">
+    <!-- Container Starts -->
     <div class="container">
+        <h1 class="text-dark" id="pageHeaderTitle">Blogs</h1>
         <div class="row">
-            &lt;!&ndash; Counter Item &ndash;&gt;
-            <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-                <div class="counter wow fadeInDown" data-wow-delay="0.3s">
-                    <div class="icon"><i class="icon-briefcase"></i></div>
-                    <div class="counterUp">250</div>
-                    <p>Project Working</p>
+            <div id="blog" class="row fadeInDown" data-wow-delay="0.4s"
+                 style="display: flex !important; align-items: center !important; justify-content: space-between !important;">
+                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265753096276897793"
+                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                </div>
+                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7264609863454937088"
+                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
                 </div>
             </div>
-            &lt;!&ndash; Counter Item &ndash;&gt;
-            <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-                <div class="counter wow fadeInDown" data-wow-delay="0.6s">
-                    <div class="icon"><i class="icon-check"></i></div>
-                    <div class="counterUp">950</div>
-                    <p>Project Done</p>
+            <div id="blog" class="row fadeInDown" data-wow-delay="0.4s"
+                 style="display: flex !important; align-items: center !important; justify-content: space-between !important;">
+                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7262854490381303808"
+                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                </div>
+                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7262183552841138176"
+                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
                 </div>
             </div>
-            &lt;!&ndash; Counter Item &ndash;&gt;
-            <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-                <div class="counter wow fadeInDown" data-wow-delay="0.9s">
-                    <div class="icon"><i class="icon-diamond"></i></div>
-                    <div class="counterUp">150</div>
-                    <p>Awards Received</p>
+            <div id="blog" class="row fadeInDown" data-wow-delay="0.4s"
+                 style="display: flex !important; align-items: center !important; justify-content: space-between !important;">
+                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7195420881882337280"
+                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                </div>
+                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7105674618568404992"
+                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
                 </div>
             </div>
-            &lt;!&ndash; Counter Item &ndash;&gt;
-            <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-                <div class="counter wow fadeInDown" data-wow-delay="1.2s">
-                    <div class="icon"><i class="icon-heart"></i></div>
-                    <div class="counterUp">299</div>
-                    <p>Happy Clients</p>
+            <div id="blog" class="row fadeInDown" data-wow-delay="0.4s"
+                 style="display: flex !important; align-items: center !important; justify-content: space-between !important;">
+                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7069230414992678913"
+                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
                 </div>
             </div>
+
         </div>
     </div>
+    <!-- Container Ends -->
 </section>
--->
+
+<!-- Counter Area Start-->
 <!-- Counter Area End-->
 
 <!-- Contact Section Start -->
 <section id="contact" class="section-padding">
     <div class="contact-form">
+        <h1 class="text-dark" id="pageHeaderTitle">Contact</h1>
         <div class="container">
             <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
                 <div class="col-md-6 col-lg-6 col-sm-12">
@@ -1666,7 +1707,8 @@
                             </div>
                             <div class="form-group">
                                 <label class="text-dark" for="name">Message</label>
-                                <textarea class="form-control" name="message" rows="2" required=""></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="2"
+                                          required=""></textarea>
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-secondary" type="submit"><i class="icon-paper-plane "></i> Send
@@ -1722,34 +1764,42 @@
         <div class="row">
             <div class="col-md-12 mt-5">
                 <div class="footer-text text-center wow fadeInDown " data-wow-delay="0.3s">
-                    <iframe class="rounded rounded-3"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13294.531079792887!2d-7.56468765!3d33.58888285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cce0e3802d55%3A0x458cd3047e24c709!2sHay%20Mohammadi%2C%20Casablanca!5e0!3m2!1sfr!2sma!4v1711842022340!5m2!1sfr!2sma"
-                            width="100%" height="50%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37730.03602575672!2d-7.597926389659734!3d33.59602258558703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cdb7d5cd5c73%3A0x216a566a6177c907!2sElhathout%20Web%20Solutions!5e0!3m2!1sfr!2sma!4v1734465269014!5m2!1sfr!2sma"
+                            width="100%" height="50%" style="border:0;border-radius: 5px" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
                     <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
                         <li>
-                            <a class="linkedin" href="https://shorturl.at/bDFP5" target="_blank"><i title="linkedin"
-                                                                                                    class="icon-social-linkedin"></i></a>
+                            <a class="linkedin" href="https://www.linkedin.com/in/abdelaziz-elhathout-191290208/"
+                               target="_blank">
+                                <i title="linkedin" class="icon-social-linkedin"></i>
+                            </a>
                         </li>
                         <li>
-                            <a class="github" href="https://shorturl.at/tINP6" target="_blank"><i title="github"
-                                                                                                  class="icon-social-github"></i></a>
+                            <a class="github" href="https://github.com/elhathoute" target="_blank">
+                                <i title="github" class="icon-social-github"></i>
+                            </a>
                         </li>
                         <li>
-                            <a class="coding-game" href="https://shorturl.at/qrXY5" target="_blank"><img
-                                    title="codingGame" class="w-50 h-50" src="assets/img/coding-game.png"/></a>
+                            <a class="coding-game"
+                               href="https://www.codingame.com/profile/3ef6fe591fd69d45273d223a1e85582d8848015"
+                               target="_blank">
+                                <img title="codingGame" class="w-50 h-50" src="assets/img/coding-game.png"/>
+                            </a>
                         </li>
                         <li>
-                            <a class="hacker-rank" href="https://shorturl.at/coC03" target="_blank"><img
-                                    title="hackerRank" class="w-50 h-50" src="assets/img/hacker-rank.png"/></a>
+                            <a class="hacker-rank" href="https://www.hackerrank.com/profile/abdelaazizeelha1"
+                               target="_blank">
+                                <img title="hackerRank" class="w-50 h-50" src="assets/img/hacker-rank.png"/>
+                            </a>
                         </li>
                         <li>
-                            <a class="email" href="mailto:abdelaazizeelhathoute.2018@gmail.com" target="_blank"><i
-                                    title="email" class="icon-envelope"></i></a>
+                            <a class="email" href="mailto:abdelaazizeelhathoute.2018@gmail.com" target="_blank">
+                                <i title="email" class="icon-envelope"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1760,6 +1810,17 @@
     </div>
 </footer>
 <!-- Footer Section End -->
+<div id="whatsapp-icon" class="whatsapp-icon" onclick="toggleInput()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+         alt="WhatsApp" width="30" height="30">
+</div>
+<div id="whatsapp-input-container" class="whatsapp-input-container">
+    <div class="whatsapp-header">
+        <p>Nous sommes à votre écoute. Envoyez-nous votre message !</p>
+    </div>
+    <input id="whatsapp-input" type="text" placeholder="Votre message..."/>
+    <button onclick="sendMessage()">Envoyer</button>
+</div>
 
 <!-- Go to Top Link -->
 <a href="#" class="back-to-top">
@@ -1779,6 +1840,78 @@
 <script src="assets/js/nivo-lightbox.js"></script>
 <script src="assets/js/jquery.slicknav.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+    function toggleInput() {
+        var inputContainer = document.getElementById('whatsapp-input-container');
+        inputContainer.style.display = (inputContainer.style.display === 'block') ? 'none' : 'block';
+    }
 
+    // Function to send message via WhatsApp
+    function sendMessage() {
+        var message = document.getElementById('whatsapp-input').value;
+        if (message.trim()) {
+            var phoneNumber = '+212615919437'; // The phone number to send the message to
+            var url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank'); // Open WhatsApp chat with the message
+            document.getElementById('whatsapp-input').value = ''; // Clear the input field
+            toggleInput(); // Hide the input field again
+        } else {
+            alert("Veuillez entrer un message.");
+        }
+    }
+
+    emailjs.init("NpacUaA603aLhgAdP");
+
+    document.querySelector(".php-email-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        const formData = {
+            from_name: document.getElementById("name").value,
+            subject: document.getElementById("subject").value,
+            from_email: document.getElementById("email").value,
+            message: document.querySelector("[name='message']").value,
+        };
+
+        emailjs.send("service_8l5fleq", "template_6qd9eea", formData)
+            .then(response => {
+                alert("Message successfully sent! Thank you for contacting us.");
+                console.log("EmailJS Response:", response);
+            })
+            .catch(error => {
+                alert("Failed to send the message. Please try again.");
+                console.error("EmailJS Error:", error);
+            });
+    });
+
+    function calculateYearsAndMonthsDifference(startDate) {
+        var currentDate = new Date();
+        var startDateObj = new Date(startDate);
+
+        var monthsDifference = (currentDate.getFullYear() - startDateObj.getFullYear()) * 12;
+        monthsDifference -= startDateObj.getMonth() + 1;
+        monthsDifference += currentDate.getMonth();
+
+        var years = Math.floor(monthsDifference / 12); // Calculate the number of full years
+        var months = monthsDifference % 12; // Get the remaining months
+
+        // Return the result in French
+        var result = '';
+        if (years > 0) {
+            result += years + ' year' + (years > 1 ? 's' : ''); // Handling plural for years
+        }
+        if (months > 0) {
+            if (result) result += ' et '; // If years are included, add 'et'
+            result += months + ' months';
+        }
+        return result || '0 months'; // If no years and months, return '0 mois'
+    }
+
+    var startDate = "05/06/2024";
+    var dateDifference = calculateYearsAndMonthsDifference(startDate);
+
+    document.getElementById("dateRange_2").append(`${dateDifference}`);
+
+
+</script>
 </body>
 </html>
