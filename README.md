@@ -88,3 +88,10 @@ Feel free to reach out to me for collaborations, queries, or feedback!
 Thank you for visiting my portfolio repository! I look forward to connecting with you and sharing more of my work.
 
 ![image](https://github.com/user-attachments/assets/0d6f038b-fded-4ef3-83a8-2c50406c0228)
+
+---
+![image](https://github.com/user-attachments/assets/c9a109aa-bb1a-445d-937a-d6c54d4a0539)
+
+---
+![image](https://github.com/user-attachments/assets/c1d7a0c4-2107-4cbf-ba54-0f7d42db1dae)
+
