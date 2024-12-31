@@ -26,6 +26,10 @@
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 <body>
 
@@ -1568,51 +1572,31 @@
     <!-- Container Starts -->
     <div class="container">
         <h1 class="text-dark" id="pageHeaderTitle">Blogs</h1>
-        <div class="row">
-            <div id="blog" class="row fadeInDown" data-wow-delay="0.4s"
-                 style="display: flex !important; align-items: center !important; justify-content: space-between !important;">
-                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+        <div id="slider" class="slider" style="overflow: hidden; position: relative;">
+            <div id="slides" class="slides" style="display: flex; transition: transform 0.5s ease;">
+                <div class="slide" style="flex: 0 0 50%; box-sizing: border-box;">
                     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7265753096276897793"
-                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                            height="400" width="100%" frameborder="0" allowfullscreen title="Embedded post"></iframe>
                 </div>
-                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+                <div class="slide" style="flex: 0 0 50%; box-sizing: border-box;">
                     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7264609863454937088"
-                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                            height="400" width="100%" frameborder="0" allowfullscreen title="Embedded post"></iframe>
                 </div>
-            </div>
-            <div id="blog" class="row fadeInDown" data-wow-delay="0.4s"
-                 style="display: flex !important; align-items: center !important; justify-content: space-between !important;">
-                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+                <div class="slide" style="flex: 0 0 50%; box-sizing: border-box;">
                     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7262854490381303808"
-                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                            height="400" width="100%" frameborder="0" allowfullscreen title="Embedded post"></iframe>
                 </div>
-                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
+                <div class="slide" style="flex: 0 0 50%; box-sizing: border-box;">
                     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7262183552841138176"
-                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                            height="400" width="100%" frameborder="0" allowfullscreen title="Embedded post"></iframe>
                 </div>
             </div>
-            <div id="blog" class="row fadeInDown" data-wow-delay="0.4s"
-                 style="display: flex !important; align-items: center !important; justify-content: space-between !important;">
-                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7195420881882337280"
-                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                </div>
-                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7105674618568404992"
-                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                </div>
-            </div>
-            <div id="blog" class="row fadeInDown" data-wow-delay="0.4s"
-                 style="display: flex !important; align-items: center !important; justify-content: space-between !important;">
-                <div class="col-sm-6 col-md-12 col-lg-4 col-xl-4 mix design-patterns">
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7069230414992678913"
-                            height="759" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                </div>
-            </div>
-
         </div>
-    </div>
-    <!-- Container Ends -->
+        <div style="text-align: center; margin-top: 10px;">
+            <button class="slider-button" id="prevBtn"><</button>
+            <button class="slider-button" id="nextBtn">></button>
+        </div>
+    </div>    <!-- Container Ends -->
 </section>
 
 <!-- Counter Area Start-->
@@ -1847,7 +1831,31 @@
     var dateDifference = calculateYearsAndMonthsDifference(startDate);
 
     document.getElementById("dateRange_2").append(`${dateDifference}`);
+    const slides = document.getElementById('slides');
+    const slideCount = slides.children.length;
+    const visibleSlides = 2;
+    let currentIndex = 0;
 
+    const updateSliderPosition = () => {
+        const slideWidth = slides.children[0].offsetWidth;
+        slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    };
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSliderPosition();
+        }
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        if (currentIndex < slideCount - visibleSlides) {
+            currentIndex++;
+            updateSliderPosition();
+        }
+    });
+
+    window.addEventListener('resize', updateSliderPosition);
 
 </script>
 </body>
