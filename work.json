@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Decq Print Maroc - FULL STACK DEVELOPER",
+    "company": "Decq Print",
+    "website": "https://decq.com/",
+    "dateRange": "05/06/2024 to Present",
+    "location": "CASABLANCA, MAROC",
+    "description": "Decq Print est une solution tout-en-un pour les entreprises de l'impression en ligne. De la commande à la livraison, Decq Print vous aide à gérer votre entreprise."
+  },
+  {
+    "title": "Wobz Technologies Maroc - FULL STACK DEVELOPER",
+    "company": "Wobz Technologies",
+    "website": "https://wobz.com/",
+    "dateRange": "05/06/2023 to 05/06/2024",
+    "location": "CASABLANCA, MAROC",
+    "description": "Wobz Technologies is a subsidiary of Wobz France, a global leader in the customization of reusable containers."
+  },
+  {
+    "title": "INTERNSHIP - FULL STACK DEVELOPER",
+    "company": "ADMDI",
+    "website": "https://www.linkedin.com/company/admdi/about/",
+    "dateRange": "05/05/2023 to 05/06/2023",
+    "location": "AGADIR, MOROCCO",
+    "description": "ADMDI consists of a team of specialists in computer development, digital marketing, and advertising, who work day and night to ensure a high level of satisfaction and strive to deliver work and achievements up to your expectations."
+  },
+  {
+    "title": "Freelance - FULL STACK DEVELOPER",
+    "company": "Freelance",
+    "website": "#",
+    "dateRange": "01/01/2022 to 04/04/2023",
+    "location": "YOUSSOUFIA, MOROCCO",
+    "description": "I created applications and websites for clients using various programming languages and development tools."
+  },
+  {
+    "title": "INTERNSHIP - FULL STACK DEVELOPER",
+    "company": "MORITSOFT",
+    "website": "https://www.moritsoft.com/",
+    "dateRange": "04/04/2021 to 06/06/2021",
+    "location": "MARRAKECH, MOROCCO",
+    "description": "MORITSOFT offers you the best IT and technological solutions. We have competent human resources, engineers, and technicians, to provide you with quality services."
+  }
+]
