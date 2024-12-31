@@ -29,8 +29,6 @@ Currently, I’m deepening my expertise in design patterns and software architec
 **Description:**
 Developed a robust e-commerce platform using Laravel and Vue.js, providing a seamless shopping experience with advanced features such as order tracking, payment integration, and user management.
 
-![E-commerce Platform Screenshot](path/to/ecommerce-image.png)
-
 **Features:**
 - User-friendly interface with Vue.js
 - Secure payment gateway integration
@@ -40,7 +38,6 @@ Developed a robust e-commerce platform using Laravel and Vue.js, providing a sea
 **Description:**
 Created a project management tool using Symfony for the backend and Vue.js for the frontend, enabling teams to collaborate efficiently and track progress.
 
-![Project Management Tool Screenshot](path/to/project-tool-image.png)
 
 **Features:**
 - Real-time task updates
@@ -51,7 +48,6 @@ Created a project management tool using Symfony for the backend and Vue.js for t
 **Description:**
 Designed a personal portfolio website to showcase my skills, projects, and achievements. Built with Laravel and Vue.js for a fast and interactive experience.
 
-![Portfolio Website Screenshot](path/to/portfolio-image.png)
 
 **Features:**
 - Responsive design
@@ -91,3 +87,4 @@ Feel free to reach out to me for collaborations, queries, or feedback!
 
 Thank you for visiting my portfolio repository! I look forward to connecting with you and sharing more of my work.
 
+![image](https://github.com/user-attachments/assets/0d6f038b-fded-4ef3-83a8-2c50406c0228)
