@@ -1556,3 +1556,32 @@ a.back-to-top i{
   background-color: #cccccc;
   cursor: not-allowed;
 }
+
+.section-title h2 {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  color: #000;
+  letter-spacing: 0.3px;
+  padding: 0;
+}
+.section-title::after {
+  content: "";
+  height: 3px;
+  background: #fbb900;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.carousel-client{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carousel-client img {
+  width: 100% !important;
+  heighth: 100px !important;
+}
