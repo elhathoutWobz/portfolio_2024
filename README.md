@@ -77,11 +77,11 @@ Designed a personal portfolio website to showcase my skills, projects, and achie
 
 Feel free to reach out to me for collaborations, queries, or feedback!
 
-**Email:** elhathout.aziz@example.com
+**Email:** abdelaazizeelhathoute.2018@gmail.com
 
-**LinkedIn:** [ABDEL Aziz ELHATHOUT](https://linkedin.com/in/elhathout-abdelaziz)
+**LinkedIn:** [ELHATHOUT](https://www.linkedin.com/in/abdelaziz-elhathout-191290208/)
 
-**Portfolio:** [Visit My Portfolio](https://elhathoutaziz.com)
+**Portfolio:** [Visit My Portfolio](https://elhathoutwobz.github.io/portfolio_2024/)
 
 ---
 
