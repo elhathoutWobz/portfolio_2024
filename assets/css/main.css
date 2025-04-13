@@ -239,6 +239,9 @@ a.back-to-top {
   right: 15px;
   text-decoration: none;
 }
+article{
+  margin: 0px 10px !important;
+}
 
 a.back-to-top i {
   display: block;
