@@ -2,6 +2,10 @@
 html {
   overflow-x: hidden;
 }
+.dark-mode {
+  background-color: black !important;
+  color: white !important;
+}
 
 body {
   background: #fff;
@@ -12,7 +16,7 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
-  color: #666;
+  color: black;
   line-height: 25px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -99,7 +103,7 @@ ul li, ol li {
 }
 
 .section-title {
-  color: #252525;
+  margin-left: 5vw;
   font-size: 38px;
   text-align: center;
   letter-spacing: 1px;
@@ -392,15 +396,17 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .timeline li .content-text {
-  background: #f2f2f2;
   padding: 20px;
 }
 
 .timeline li .line-title {
   font-size: 16px;
-  line-height: 6px;
+  line-height: 20px;
 }
-
+#resume  svg {
+  background-color: #f1d008 !important;
+  border-radius: 20px;
+}
 .timeline li span {
   font-size: 12px;
   padding: 9px 0;
@@ -773,10 +779,6 @@ a.back-to-top:hover, a.back-to-top:focus {
 /* ==========================================================================
   Portfolio Section
    ========================================================================== */
-#portfolios {
-  background: #f2f2f2;
-}
-
 #portfolios .mix {
   padding: 10px;
 }
@@ -899,13 +901,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: #fff;
 }
 
-/* Services Item */
-.services {
-  background: #F0F0F0;
-}
-
 .services-item {
-  background: #fff;
+  background: #fafafa30;
   border-radius: 4px;
   padding: 48px 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -935,7 +932,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 .services-item .services-content h3 a {
   font-size: 18px;
   text-transform: uppercase;
-  color: #666;
 }
 
 .services-item .services-content h3 a:hover {
@@ -972,7 +968,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .contact-form-area {
-  background: #fff;
   box-shadow: 0 0 30px #ededed;
   padding: 60px 40px;
 }
@@ -1127,22 +1122,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 /**image card**/
 /**@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");**/
-
-body {
-  font-family: "Baloo 2", cursive;
-  font-size: 16px;
-  color: #ffffff;
-  text-rendering: optimizeLegibility;
-  font-weight: initial;
-}
-
-.dark {
-  background: #110f16;
-}
-
-.light {
-  background: #f3f5f7;
-}
 
 a,
 a:hover {
@@ -1562,7 +1541,6 @@ a.back-to-top i{
   font-size: 18px;
   text-transform: uppercase;
   padding-bottom: 6px;
-  color: #000;
   letter-spacing: 0.3px;
   padding: 0;
 }
