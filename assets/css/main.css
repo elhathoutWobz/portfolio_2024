@@ -1565,6 +1565,7 @@ a.back-to-top i{
   flex: 1 1 calc(20% - 16px); /* Flexible basis: 20% width minus gap */
   max-width: 200px; /* Limit maximum width */
   text-align: center;
+  padding: 10px !important;
 }
 
 .slide img {
